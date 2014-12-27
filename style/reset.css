@@ -1,5 +1,6 @@
 @charset "utf-8";
 /* CSS Document */
+
 /*remove zero*/
 body,ul,ol,li,p,h1,h2,h3,h4,h5,h6,form,fieldset,table,td,img,div,dl,dt,dd,input{ margin: 0; padding: 0;}
 body{ font-size: 12px;}
@@ -8,6 +9,10 @@ li{ list-style: none;}
 inout,select,textarea{ outline: none;}
 textarea{ resize: none;}
 a{ text-decoration: none;}
+/*new one*/
+a { color: #656565}
+
 /*remove float*/
 .clearfix: after{ content: ""; display: block; clear: both;}
 .clearfix{ zoom: 1;}
+
