@@ -53,3 +53,13 @@
 .shopClass_item .b{font-family:"Arial Black", Gadget, sans-serif; font-size: 16px; color:white;}
 .shopClass_item .aLink{width:48px; height:20px; background:url(../images/icon/aLink_bg.png) left center no-repeat; display:inline-block; text-align:center; line-height:20px; text-decoration:underline;}
 
+/*bannerBar*/
+.banner_bar{ width:810px; height:326px; float:left; position:relative; overflow:hidden;}/*父级相对定位*/
+.imgBannerBox{ width:1620px; height:326px; position:absolute; left:0px; top:0px;}/*if change left to "-810px", then can see the second banner*/
+.imgBannerBox li{ float:left;}
+.imgBannerBox img{ width:810px; height:326px; display:block;}
+
+/*nav below the banner*/
+.imgNav{ position:absolute; left:0; bottom:15px; width: 100%; text-align:center;}
+.imgNav a{ width:20px; height:5px; overflow: hidden; background-color: white; display:inline-block; margin:0 3px;}/*a 属于内嵌元素。不加display根本看不见*//*不加margin之前是一大块,加了margin就拆成了好几块互相有间距的小块*/
+.imgNav .active{ background-color:#FF7700;}
