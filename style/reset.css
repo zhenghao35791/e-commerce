@@ -17,7 +17,7 @@ a { color: #656565}
 .clearfix: after{ content: ""; display: block; clear: both;}
 .clearfix{ zoom: 1;}
 
-/*float*/\
+/*float*/
 .fl{ float:left;}
 .fr{ float:right;}
 

@@ -115,3 +115,41 @@
 .hr_45{height:45px;}
 .hr_7{height:7px; overflow:hidden;}
 .hr_15{height:15px; overflow:hidden;}
+
+/*hide*/
+.hide { display:none;}
+
+/*second-page Products*/
+.products .leftArea{ width: 184px; background-color: #F3F3F3;border:#D7D7D7 solid 1px; margin-top: 10px; font-family:Arial, Helvetica, sans-serif; }
+.nav_Title{ font-size:16px; font-weight:bold; height:34px; line-height:34px;border-bottom:#D7D7D7 solid 1px;}
+.nav_Title { font-weight:bold; font-size:12px; height:30px; line-height:30px; text-align:center;}
+
+.left_Text h4{font-size:12px; height:30px; line-height:30px; width: 50%;}
+.left_Text{padding:5px 20px 5px; border-top:#D7D7D7 solid 1px; clear:both;}
+.left_List li{ font-size:12px; width: 50%;  float:left;}
+.left_List{ line-height: 25px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
