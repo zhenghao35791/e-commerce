@@ -5,7 +5,11 @@
 .commonWidth{ width:1000px; margin-left:auto; margin-right:auto;}
 .leftArea{ float:left;}
 .rightArea{ float:right; font-size:	14px;}
-
+.hr_7{ height: 7px;}
+.hr_15{ height: 15px; overflow:hidden;}
+.hr_25{ height: 25px; overflow:hidden;}
+.hr_40{ height: 40px; overflow:hidden;}
+.rightWidth{ width: 810px;}
 /*topBar*/
 .topBar{ height: 31px; background-color:#F7F7F7; line-height:31px;}
 .collection{ background:url(../images/icon/collection.jpg) left center no-repeat;; padding-left: 19px; font-weight:bold;/*bold*/}
@@ -14,32 +18,32 @@
 .topBar a:hover{color:red;} 
 
 /*logoBar*/
-.logoBar { height: 85px; background-color: #1D7AD9; }
+.logoBar { height: 85px; background-color: #1D7AD9; font-weight:normal;}
 .logo { padding-left: 41px; padding-top: 13px; float:left;}
 
 /*search*/
-.search_box{ width:430px; padding-top:23px; padding-left:185px; float:left;}
-.search_text{ width: 350px; height: 35px;  line-height:35px\9; /*css hack  "\9" for IE6 to adjust the height*/ float:left; padding:0 5px; background-color:#FFFFFF}
-.search_btn { width: 70px; height: 35px; font-size:14px; font-family:"Arial Black", Gadget, sans-serif; background-color:#FF8C00; color: white; /* font-color, not backgroundcolor */float:right;}
+.search_box{ width:430px; padding-top:23px; padding-left:145px; float:left;}
+.search_text{ width: 350px; height: 35px;  line-height:35px\9; /*css hack  "\9" for IE6 to adjust the height*/ float:left; padding:0 5px; background-color:#FFFFFF;font-weight:normal;}
+.search_btn { width: 70px; height: 35px; font-size:14px; font-family: Arial, Helvetica, sans-serif; background-color:#FF8C00; color: white; /* font-color, not backgroundcolor */float:right;font-weight:normal;}
 
 /*shopCar*/
-.shopCar { width: 145px; height: 35px; background-color: #FF8800; margin-top:23px; font-size: 14px;font-family:"Arial Black", Gadget, sans-serif;color: white; margin-right:59px;}
+.shopCar { width: 145px; height: 35px; background-color: #FF8800; margin-top:23px; font-size: 14px;font-family: Arial, Helvetica, sans-serif;color: white; margin-right:59px; font-weight:normal;}
 .shop_text{ 
 	line-height: 35px;/* line-height与height高度相同,就上下居中了.*/ 
   	width: 87px; 
   	border-right: #E27A00 solid 1px;/* write a right border to divide shop_text and shop_Num.*/
   	background: url(../images/icon/shopCar.jpg) 10px center no-repeat;/*有icon的时候用background加URL图标。 x轴10px y轴center*/
 	text-indent:40px;  /*缩进 因为shop跟左边框有40px距离 应该跟padding-left是一样的道理*/
-	padding-left: 40px;/*padding是控件的内容相对控件的边缘的边距．margin是控件边缘相对父空间的边距 margin是对外的，padding是对内的，margin不影响内表*/}
-.shop_Number{ width: 27px;border-left: #FF9C01 solid 1px; background:url(../images/icon/shop_Number.jpg) 23px center  no-repeat; text-align:right; padding-left: 5px; padding-right: 27px;}
+	padding-left: 10px;/*padding是控件的内容相对控件的边缘的边距．margin是控件边缘相对父空间的边距 margin是对外的，padding是对内的，margin不影响内表*/}
+.shop_Number{ width: 27px;border-left: #FF9C01 solid 1px; background:url(../images/icon/shop_Number.jpg) right 12px  no-repeat; text-align:left; padding: 10px 5px 0 5px;}
 
 /*navBox*/
-.navBox {height: 35px; background-color:#1369C0; color: white; font-family:"Arial Black", Gadget, sans-serif;	}
+.navBox {height: 35px; background-color:#1369C0; color: white; font-family:	Arial, Helvetica, sans-serif;}
 .classification{ float:left; width: 190px; font-size:16;font-weight:bold;}
 .classification i {width:12px; height:7px;line-height:35px; background: url(../images/icon/classification.jpg) left center no-repeat; display:inline-block; }
-.nav{ line-height: 35px; font-family:"Arial Black", Gadget, sans-serif; font-family:14px;}
-.nav li{ float:left;}
-.nav a {height: 35px; line-height: 35px; padding: 0 35px; color:white; font-size:14; display: inline-block;}
+.nav{ line-height: 35px; font-family: Arial, Helvetica, sans-serif font-family:14px; font-weight:normal;}
+.nav li{ float:left; font-weight:normal;}
+.nav a {height: 35px; line-height: 35px; padding: 0 35px; color:white; font-size:14; display: inline-block; font-weight:normal;}
 .nav .active{ background-color: #4593FD; }
 .classification h3{text-align:center; line-height:35px;}
 
@@ -128,6 +132,28 @@
 .left_Text{padding:5px 20px 5px; border-top:#D7D7D7 solid 1px; clear:both;}
 .left_List li{ font-size:12px; width: 50%;  float:left;}
 .left_List{ line-height: 25px;}
+
+/*productsRightArea*/
+.products .rightArea{floar:right;}
+.products .rightArea .banner_bar{ float:none;}
+.productsRightTitle{ height: 34px; line-height: 34px; border-bottom:#CCCCCC solid 2px;}
+.productsRightTitle h3{width:180px; border-bottom:#096DBA solid 2px; height:34px; line-height:34px; padding-left:9px; margin-bottom:-2px; position:relative;}
+
+/*item in the productRightArea*/
+
+.item{width:25%;float:left; height:265px; position:relative; margin-bottom: 10px;}
+.item_cont{padding:0 15px;}
+.img_item{height:170px; text-align:center;}
+.img_item img{height:170px;}
+.item p{line-height:20px;}
+.item a{color:#000;}
+.item a:hover{text-decoration:underline;}
+.money{color:#D4105A; font-weight:bold; padding-top:10px; padding-left:15px;}
+.stars{width:13px; height:12px; overflow:hidden; background:url(../images/icon/collection.jpg) left center no-repeat;display:inline-block; margin-right:1px;}
+.products .rightArea { width:810px;}
+.products .products_list{ clear:both;}
+
+
 
 
 
