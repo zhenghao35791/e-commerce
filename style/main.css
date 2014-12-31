@@ -10,6 +10,7 @@
 .hr_25{ height: 25px; overflow:hidden;}
 .hr_40{ height: 40px; overflow:hidden;}
 .rightWidth{ width: 810px;}
+.nonefloat{ float:none;}
 /*topBar*/
 .topBar{ height: 31px; background-color:#F7F7F7; line-height:31px;}
 .collection{ background:url(../images/icon/collection.jpg) left center no-repeat;; padding-left: 19px; font-weight:bold;/*bold*/}
@@ -133,9 +134,13 @@
 .left_List li{ font-size:12px; width: 50%;  float:left;}
 .left_List{ line-height: 25px;}
 
+/*filter_Left*/
+.filter_Left li{ float:none; width:auto; padding-left: 8px; line-height: 25px;}
+
+
 /*productsRightArea*/
-.products .rightArea{floar:right;}
-.products .rightArea .banner_bar{ float:none;}
+
+.products .rightArea .banner_bar{ float:none; margin-top:10px; width: 810px;}
 .productsRightTitle{ height: 34px; line-height: 34px; border-bottom:#CCCCCC solid 2px;}
 .productsRightTitle h3{width:180px; border-bottom:#096DBA solid 2px; height:34px; line-height:34px; padding-left:9px; margin-bottom:-2px; position:relative;}
 
@@ -153,7 +158,19 @@
 .products .rightArea { width:810px;}
 .products .products_list{ clear:both;}
 
+/*filter page-fliterBox*/
+.fliterBox{ border-bottom:#D9D9D9 solid 1px; clear:both;}
+.fliterBox dt{ text-align:center; line-height: 30px; width:76px; float:left; margin-right:20px; font-weight:bold;}
+.fliterBox .filter_all{ float:left; width: 55px;line-height: 30px;}
+.fliterBox .active{ background-color:#1D7AD9; color: white;}/*if click sth, give the class active to it then change backgroundcolor*/
+.fliterBox a{ padding:2px;}
+.fliterBox a:hover{ text-decoration:underline; color:#03F;}
+.filter_list li{ line-height:30px; float:left; width:15%;}/*adjust width% can change how many items will be in one line*/
+.filter_list{ width: 628px; float:left; }
 
+.filterBoxMore{ border: #CCC solid 1px; height: 23px; line-height: 23px; float:left;  padding-right:5px; padding-left: 5px;margin-right:20px; margin-top:5px; border:#D9D9D9 dot 1px;}
+.filterBoxMore a{background:	url(../images/icon/sj_grey.gif) right center no-repeat; padding-right:15px; float:left; }
+.filterBoxMoreTitle{ margin-top:5px;}
 
 
 
