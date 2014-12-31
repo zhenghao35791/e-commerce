@@ -11,6 +11,7 @@
 .hr_40{ height: 40px; overflow:hidden;}
 .rightWidth{ width: 810px;}
 .nonefloat{ float:none;}
+
 /*topBar*/
 .topBar{ height: 31px; background-color:#F7F7F7; line-height:31px;}
 .collection{ background:url(../images/icon/collection.jpg) left center no-repeat;; padding-left: 19px; font-weight:bold;/*bold*/}
@@ -109,7 +110,7 @@
 /*copy a new shopList*/
 .shopList{margin-bottom:15px;}
 
-/*底部*/
+/*footer*/
 .footer{ width:100%;height:220px; text-align:center; background-color:#D4D4D4; line-height:24px; padding:50px 0; float:left;}
 .footer i{font-style:normal; margin:0 5px; }
 .footer a{color:#000;}
@@ -139,27 +140,25 @@
 
 
 /*productsRightArea*/
-
 .products .rightArea .banner_bar{ float:none; margin-top:10px; width: 810px;}
 .productsRightTitle{ height: 34px; line-height: 34px; border-bottom:#CCCCCC solid 2px;}
 .productsRightTitle h3{width:180px; border-bottom:#096DBA solid 2px; height:34px; line-height:34px; padding-left:9px; margin-bottom:-2px; position:relative;}
 
 /*item in the productRightArea*/
-
 .item{width:25%;float:left; height:265px; position:relative; margin-bottom: 10px;}
 .item_cont{padding:0 15px;}
-.img_item{height:170px; text-align:center;}
+.img_item{height:170px;}
 .img_item img{height:170px;}
 .item p{line-height:20px;}
 .item a{color:#000;}
 .item a:hover{text-decoration:underline;}
-.money{color:#D4105A; font-weight:bold; padding-top:10px; padding-left:15px;}
+.money{color:#D4105A; font-weight:bold; padding-top:5px; padding-left:15px;}
 .stars{width:13px; height:12px; overflow:hidden; background:url(../images/icon/collection.jpg) left center no-repeat;display:inline-block; margin-right:1px;}
 .products .rightArea { width:810px;}
 .products .products_list{ clear:both;}
 
 /*filter page-fliterBox*/
-.fliterBox{ border-bottom:#D9D9D9 solid 1px; clear:both;}
+.fliterBox{ border-bottom:#D9D9D9 solid 1px; clear:both; margin-top:10px;}
 .fliterBox dt{ text-align:center; line-height: 30px; width:76px; float:left; margin-right:20px; font-weight:bold;}
 .fliterBox .filter_all{ float:left; width: 55px;line-height: 30px;}
 .fliterBox .active{ background-color:#1D7AD9; color: white;}/*if click sth, give the class active to it then change backgroundcolor*/
@@ -167,11 +166,34 @@
 .fliterBox a:hover{ text-decoration:underline; color:#03F;}
 .filter_list li{ line-height:30px; float:left; width:15%;}/*adjust width% can change how many items will be in one line*/
 .filter_list{ width: 628px; float:left; }
-
 .filterBoxMore{ border: #CCC solid 1px; height: 23px; line-height: 23px; float:left;  padding-right:5px; padding-left: 5px;margin-right:20px; margin-top:5px; border:#D9D9D9 dot 1px;}
 .filterBoxMore a{background:	url(../images/icon/sj_grey.gif) right center no-repeat; padding-right:15px; float:left; }
 .filterBoxMoreTitle{ margin-top:5px;}
 
+/*below fliterbox deliverary*/
+.addInfo{height:31px; border:#CCC solid 1px; background-color:#F5F5F5;}
+.address{float:left;}
+.add_text{float:left; line-height:31px; padding-left:12px; padding-right:6px;}
+.addInfo .select{margin-top:4px;}
+.screen_text{line-height:31px; padding-right:80px;}
+.check{position:relative; top:-1px; _top:4px;}
+.shop_number{position:relative; _top:4px;}
+.check input,
+.check label{vertical-align:middle;}
+.shop_number em{color:#F00; font-style:normal; font-weight:bold;}
+
+/* products list in fliter rightArea*/
+.addCar{border:#999 solid 1px; height:22px; line-height:22px; display:inline-block; padding:0 6px 0 23px; background:url(../images/icon/car.jpg) 6px center no-repeat;}
+.addCarText{ font-family:Arial, Helvetica, sans-serif; font-size:12px; font-style: italic;color:#397ABE;}
+.filter_List_More{padding-left:0.5%;}
+.filter_List_More .item{width:33.3%;}
+
+/*popup*/
+.select{border:#999 solid 1px; height:22px; line-height:22px; float:left; background-color:#FFF; padding-left:10px; padding-right:20px; position:relative; z-index:4;}
+.select h3{font-size:12px; font-weight:normal;}
+.select span{position:absolute; right:0; top:0; height:100%; width:20px; background:url(../images/icon/sj_blue.jpg) center center no-repeat;}
+.show_select{position:absolute; left:-1px; top:22px; background-color:#FFF; width:100%;border:#999 solid 1px; display:none;}
+.show_select li{padding-left:10px;}
 
 
 
