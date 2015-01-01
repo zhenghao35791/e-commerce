@@ -195,6 +195,17 @@
 .show_select{position:absolute; left:-1px; top:22px; background-color:#FFF; width:100%;border:#999 solid 1px; display:none;}
 .show_select li{padding-left:10px;}
 
+/*page*/
+.page{text-align:center; position:relative; z-index:2;}
+.page a{height:24px; display:inline-block; line-height:24px; border:#CCC solid 1px; padding:0 12px; margin:0 2px;}
+.page .hl{display:inline-block;padding:0 12px; margin:0 2px;}
+.morePage{padding-left:14px; display:inline-block; height:24px; line-height:24px;}
+.pageNum{width:29px; padding:0 3px; border:#ccc solid 1px; height:24px; line-height:24px\9; text-align:center; margin-left:4px;}
+.page_btn{ background-color:#E8E8E8; }
+.ye{padding:0 8px 0 6px;}
+.page a,
+.page span,
+.page input{vertical-align:middle; position:relative;}
 
 
 
