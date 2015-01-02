@@ -11,7 +11,8 @@
 .hr_40{ height: 40px; overflow:hidden;}
 .rightWidth{ width: 810px;}
 .nonefloat{ float:none;}
-
+.hide{ display:none;}
+.clearfix{ clear:both;}
 /*topBar*/
 .topBar{ height: 31px; background-color:#F7F7F7; line-height:31px;}
 .collection{ background:url(../images/icon/collection.jpg) left center no-repeat;; padding-left: 19px; font-weight:bold;/*bold*/}
@@ -207,11 +208,71 @@
 .page span,
 .page input{vertical-align:middle; position:relative;}
 
+/*product information*/
+/*.backgrounColorGrey{ background-color:#F0F0F0;}*/
 
+/*product_info html nav*/
+.userPosition{font-size:0; font-family: Arial, Helvetica, sans-serif; margin-top:25px; margin-bottom:15px;}
+.userPosition em,
+.userPosition span,
+.userPosition strong,
+.userPosition a{font-size:12px;}
+.userPosition em{font-style:normal;}
+.userPosition a:hover{text-decoration:underline;}
+.description{border:#CCC solid 1px;}
 
+/*left right area under nav*/
+.description .leftArea{width:309px;}
+.description .rightArea{width:688px; border-left:#CCC solid 1px;}
 
+/*图片展示*/
+.description_imgs .big{height:340px; text-align:center;}
+.des_smimg{padding-left:1px; width:265px; margin:0 auto;}
+.des_smimg li{float:left; margin-left:-1px;}
+.des_smimg img{border:#CCC solid 1px;}
+.des_smimg .active{border-color:#317EE7; position:relative;}
+.des_content{padding:10px;}
+.des_content_tit{font:bold 16px/22px "Microsoft YaHei", "微软雅黑"; padding:13px 25px;}
+.des_content .dl{margin-bottom:8px;}
+.des_content .dt{width:75px; float:left; position:relative; color:#666; text-indent:17px; line-height:25px; margin-right:15px;}
+.des_content .dd{padding-left:75px; *padding-left:0;}
+.des_money{font-size:18px; color:#F30; font-family:Verdana;}
+.des_money em{font-style:normal; font-size:12px;}
 
+/*huangou*/
+.hg{padding-top:4px; display:inline-block;}
+.hg_icon{width:55px; height:18px; display:inline-block; background-position:0 -101px;  color:#FFF;font-style:normal; text-indent:16px; line-height:18px; margin-right:10px; float:left; background: url(../images/icon/hg_icon.jpg) left top no-repeat;} 
+.hg em{float:left; font-style:normal; line-height:18px;}
 
+/*deliverary*/
+.des_position{background-color:#F2F2F2; padding:15px 0;}
+.theGoods{line-height:24px; padding-left:10px;}
+.des_content  .colorSelect{line-height:35px;}
+.des_item{color:#666; padding:9px 10px; border:#CCC solid 1px; float:left; background-color:#FFF; margin-right:10px; margin-bottom:15px;}
+.des_item_acitve{border-color:#317EE7; color:#333;}
+.des_item_sm{padding:3px 7px; margin-bottom:8px;}
+.des_content .des_select_more{line-height:55px;}
+
+/*number*/
+.des_number{border:#B2B2B2 solid 1px; height:32px; width:82px; float:left;}
+.des_number div{height:100%; float:left;}
+.reduction,.plus{width:15px; background: url(../images/icon/plus_bg.jpg)) left top no-repeat; line-height:32px; text-align:center; color:#333;}
+.reduction{border-right:#CCC solid 1px;}
+.plus{border-left:#CCC solid 1px;}
+.des_input{width:42px; background: url(../images/icon/des_input_bg.jpg) left top no-repeat; padding:0 4px; overflow:hidden;}
+.des_input input{width:100%; height:32px; line-height:32px\9; text-align:center;}
+.xg{line-height:32px;  float:left; padding-left:10px; font-weight:bold; color:#656565;}
+.xg em{color:#FB7700; font-style:normal;}
+.des_content .des_num{line-height:32px;}
+
+/*select*/
+.des_select{font-weight:bold; margin:22px 0 12px; text-indent:17px;}
+.des_select span{color:#0479C9;}
+.shop_buy{text-align:center;}
+.shopping_btn,.buy_btn{display:inline-block; width:184px; height:48px; background:url(../images/icon/buy_btn.jpg) left top no-repeat;}
+.line{width:1px; height:90px; overflow:hidden; background-color:#CCC; display:inline-block; margin:0 40px;}
+.line,.shopping_btn,.buy_btn{vertical-align:middle;}
+.notes{color:#CCC; text-indent:17px;} 
 
 
 
