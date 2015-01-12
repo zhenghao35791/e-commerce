@@ -22,7 +22,7 @@
 
 /*logoBar*/
 .logoBar { height: 85px; background-color: #1D7AD9; font-weight:normal;}
-.logo { padding-left: 41px; padding-top: 13px; float:left;}
+.logo { padding-left: 11px; padding-top: 10px; float:left;}
 
 /*search*/
 .search_box{ width:430px; padding-top:23px; padding-left:145px; float:left;}
@@ -57,8 +57,8 @@
 .shopClass_item a{color:white;}
 .shopClass_item a:hover{text-decoration:underline; color:#106AC0;}
 .shopClass_item dt{height:15px; line-height:1; overflow:hidden; background:url(../images/icon/shop_sj.jpg) right center no-repeat;}
-.shopClass_item .b{font-family:"Arial Black", Gadget, sans-serif; font-size: 16px; color:white;}
-.shopClass_item .aLink{width:48px; height:20px; background:url(../images/icon/aLink_bg.png) left center no-repeat; display:inline-block; text-align:center; line-height:20px; text-decoration:underline;}
+.shopClass_item .b{font-family: Arial, Helvetica, sans-serif; font-size: 14px; color:white;hight:20px; line-height:20px;}
+/*.shopClass_item .aLink{width:48px; height:20px; background:url(../images/icon/aLink_bg.png) left top no-repeat; display:inline-block; text-align:center; line-height:20px; text-decoration:underline;}*/
 
 /*bannerBar*/
 .banner_bar{ width:810px; height:326px; float:left; position:relative; overflow:hidden;}/*父级相对定位*/
@@ -74,7 +74,7 @@
 .imgNav .active{ background-color:#FF7700;}
 
 /*title*/
-.shopTitle{height:44px; line-height:44px;font-family:"Arial Black", Gadget, sans-serif; clear:both; margin-bottom:15px;}
+.shopTitle{height:44px; line-height:44px;font-family:"Arial Black", Gadget, sans-serif; clear:both; margin-bottom:15px; border:solid #36F 1px;}
 .shopTitle h3{ font-size:24px; float:left; padding-left:15px; font-weight:bold; }
 .icon{ width:44px; height:44px; background: url(../images/icon/shopIcon.jpg) left center no-repeat; float:left;}
 .more{ float:right;}
@@ -94,11 +94,15 @@
 /*shopItemRight*/
 .shopList .rightArea {height:396px; border:#999 solid 1px; border-bottom:#FF7201 solid 3px; overflow:hidden;}
 .shopRightTop{ clear:both; margin-right:-4px;}
-.shopItem{ width: 202px; height: 279px; border-right:#999 solid 1px;border-bottom:#999 solid 1px; text-align: center; font-family:"Arial Black", Gadget, sans-serif; float:left;}
+.shopItem{ width: 202px; height: 279px; border-right:#999 solid 1px;border-bottom:#999 solid 1px; text-align: center; font-family:Arial, Helvetica, sans-serif; float:left;}
 .shopItem img{height:218px; display:block;width:100%; float:left;}
 .itemImg{ height:218px;}
 .shopItem h3{ font-size:16px;}
-.shopItem p{ font-size:14px; color:#FFD3AF;line-height:21px;}
+.shopItem p{
+	font-size: 14px;
+	color: #EBABA9;
+	line-height: 21px;
+}
 
 /*shopItemSmall*/
 .shopRightDown{margin-right:-4px;}
