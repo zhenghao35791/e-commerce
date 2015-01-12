@@ -250,7 +250,7 @@
 .hg em{float:left; font-style:normal; line-height:18px;}
 
 /*deliverary*/
-.des_position{background-color:#F2F2F2; padding:15px 0;}
+.des_position{background-color:#F2F2F2; padding:28px 0;}
 .theGoods{line-height:24px; padding-left:10px;}
 .des_content  .colorSelect{line-height:35px;}
 .des_item{color:#666; padding:9px 10px; border:#CCC solid 1px; float:left; background-color:#FFF; margin-right:10px; margin-bottom:15px;}
@@ -300,7 +300,40 @@
 .info_text p{line-height:22px; font-size:14px; color:#656565;}
 .center{display:block; margin:0 auto;}
 
+/*商品评价*/
+.shopDes_tit{line-height:38px; height:38px; font-size:14px; color:#656565; padding-left:10px;}
+.score_box{padding-left:10px; height:120px;}
+.score{font-family:"Microsoft YaHei", "微软雅黑"; float:left; margin-right:10px;}
+.score em{font-size:18px; color:#65657D; font-style:normal;}
+.score span{font-size:50px; color:#FF8F00;}
+.score_speed{float:left; width:450px; line-height:16px; font-size:12px; margin-top:12px; position:relative;}
+.score_speed_text{overflow:hidden; margin-bottom:10px; color:#FFF; height:16px;background-color:#BDBDBD;  }
+.score_speed_text li{float:left;}
+.score_speed_text .speed_01{width:114px; text-indent:26px;}
+.score_speed_text .speed_02{width:82px;}
+.score_speed_text .speed_03{width:76px;}
+.score_speed_text .speed_04{width:65px;}
+.score_num{position:absolute; left:94%; top:-21px; text-align:center; width:25px; height:14px; background-color:#7F7F7F; color:#FFF;}
+.score_num i{border-width:4px; border-style:solid dashed dashed dashed; border-color:#7F7F7F transparent transparent transparent; width:0; height:0;}
 
+/*满意切换*/
+.review_tab{height:32px; background-color:#F2F2F2;}
+.review{line-height:32px; height:100%; padding-left:20px;}
+.review li{float:left; height:100%; margin-right:40px;}
+.review li a{display:inline-block; height:30px; line-height:30px; padding:0 5px;}
+.review .active{color:#317DE6; font-weight:bold; border-bottom:#317DE6 solid 2px; margin-bottom:-2px; position:relative;}
+.review_sort{padding:5px 5px 0 0;}
+.review_sort a{display:inline-block; line-height:20px; height:20px; border:solid 1px #ccc; padding:0 20px 0 6px; background:url(../images/icon/down.png) 58px center no-repeat;}
+.review_list{padding-top:18px; margin-bottom:10px;}
+.review_userHead{width:170px;}
+.review_user{width:60px; text-align:center; margin-left:40px;}
+.review_user img{width:60px; height:60px; display:block;}
+.review_user p{line-height:20px;}
+.review_cont{padding-left:170px;}
+.starsBox .stars{margin-top:1px;}
+.stars_text{font-weight:bold; padding-left:10px;}
+.review_t{height:24px; padding-top:5px;}
+.review_cont p{line-height:30px;}
 
 
 
