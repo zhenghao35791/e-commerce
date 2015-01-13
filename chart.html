@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>chart.html</title>
+<title>cart.html</title>
 <!-- TemplateBeginEditable name="doctitle" -->
 <link type="text/css" rel="stylesheet" href="style/reset.css">
 <link type="text/css" rel="stylesheet" href="style/main.css">
@@ -32,31 +32,120 @@
                 <div class = "logo">
                     <a href = "?"><img src = "images/icon/logo.jpg" alt = "im logo"></a>
                 </div>
-                
+                <div class="stepBox fr">
+				<div class="step"></div>
+				<ul class="step_text">
+					<li class="s01 active">Add to cart</li>
+					<li class="s02 active">Check your order</li>
+					<li class="s03">Check out</li>
+				</ul>
+			</div>
             </div>
-        </div>
-        
-        <div class = "navBox">
-        	<div class = "commonWidth">
-        		<div class = "classification fl">
-                	<h3>CLASSIFICATION <i class = "shopClass_icon"></i></h3> 
-                    	
-                  </div>		               
-                <ul class = "nav fl">
-                    <li><a href = "" class = "active">Mobile</a></li>
-                    <li><a href = "">Cars</a></li>
-                    <li><a href = "">Books</a></li>
-                    <li><a href = "">Clothes</a></li>
-                    <li><a href = "">Shoes</a></li>
-                    <li><a href = "">Food</a></li>
-                </ul>	<!--dt是标题，dd是该标题的内容，dl是外层包裹-->
-            </div>	
-        </div>	    
+        </div>    
     </div>
-    
+    <div class="shoppingCart commonWidth">
+	<div class="shopping_item">
+		<h3 class="shopping_tit">Shipping Address</h3>
+		<div class="shopping_cont padding_shop">
+			<ul class="shopping_list">
+				<li><span class="shopping_list_text"><em>*</em>State：</span>
+					<div class="select">
+						<h3>Inside Australia</h3><span></span>
+						<ul class="show_select">
+							<li>VIC</li>
+							<li>NSW</li>
+							<li>QLD</li>
+						</ul>
+					</div>
+				</li>
+				<li><span class="shopping_list_text"><em>*</em>Street：</span><input type="text" value="maximum 20 characters" class="input input_b"></li>
+				<li><span class="shopping_list_text"><em>*</em>Name：</span><input type="text" value="maximum 20 character" class="input"></li>
+				<li><span class="shopping_list_text"><em>*</em>Mobile:</span><input type="text" value="e.g. 12312312" class="input"><span class="cart_tel">&nbsp;Or Home Phone：</span><input type="text" class="input input_s"><span class="jian">-</span><input type="text" class="input input_s2"><span class="jian">-</span><input type="text" class="input input_s2"></li>
+				<li><input type="button" class="affirm"></li>
+			</ul>
+		</div>
+	</div>
+	<div class="hr_25"></div>
+	<div class="shopping_item">
+		<h3 class="shopping_tit">Checkout</h3>
+		<div class="shopping_cont padding_shop">
+			<ul class="shopping_list">
+				<li><input type="radio" class="radio" id="r1"><label for="r1">Buy with Credit</label>&nbsp;(Buy with Credit Buy with Credit)</li>
+				<li><input type="radio" class="radio" id="r2"><label for="r2">Buy with Loan</label>&nbsp;(Buy with Loan Buy with Loan)</li>
+			</ul>
+		</div>
+	</div>
+	<div class="hr_25"></div>
+	<div class="shopping_item">
+		<h3 class="shopping_tit">Delivery Information<a href="#" class="backCar">Go Back and Edit</a></h3>
+		<div class="shopping_cont pb_10">
+			<div class="cart_inner">
+				<div class="cart_head clearfix">
+					<div class="cart_item t_name">Product Name</div>
+					<div class="cart_item t_price">Price</div>
+					<div class="cart_item t_return">Discount</div>
+					<div class="cart_item t_num">Amount</div>
+					<div class="cart_item t_subtotal">Total</div>
+				</div>
+				<div class="cart_cont clearfix">
+					<div class="cart_item t_name">
+						<div class="cart_shopInfo clearfix">
+							<img src="images/des_sm.jpg" alt="">
+							<div class="cart_shopInfo_cont">
+								<p class="cart_link"><a href="#">iphone 6(16GB)</a></p>
+								<p class="cart_info">Signature may be required for delivery.</p>
+							</div>
+						</div>
+					</div>
+					<div class="cart_item t_price">
+						$869.00
+					</div>
+					<div class="cart_item t_return">0.00</div>
+					<div class="cart_item t_num">1</div>
+					<div class="cart_item t_subtotal t_red">$869</div>
+                    <div class="cart_message">
+					Not permitted for security reasons.
+				</div>
+					<div class="cart_prompt"><i class="cart_prompt_icon"></i>Sorry, out of stock</div>
+				</div>
+				
+                
+				<!---<div class="cart_cont cart_no_bor clearfix">
+					<div class="cart_item t_name">
+						<div class="cart_shopInfo clearfix">
+							<img src="images/des_sm.jpg" alt="">
+							<div class="cart_shopInfo_cont">
+								<p class="cart_link"><a href="#">iphone 6(16GB)</a></p>
+								<p class="cart_info">Signature may be required for delivery.</p>
+							</div>
+						</div>
+					</div>
+				</div>--->
+			</div>
+		</div>
+	</div>
+	<div class="hr_25"></div>
+	<div class="shopping_item">
+		<h3 class="shopping_tit">Final Submit</h3>
+		<div class="shopping_cont padding_shop clearfix">
+			<div class="cart_count fr">
+				<div class="cart_rmb">
+					<i>Total：</i><span>￥1245.00</span>
+				</div>
+				<div class="cart_btnBox">
+					<input type="button" class="cart_btn" value="Submit">
+				</div>
+			</div>
+		</div>
+        <div class="hr_25"></div>
+  		<div class="hr_25"></div>
+        <div class="hr_25"></div>
+	</div>
+    <div class="hr_25"></div>
+  		<div class="hr_25"></div>
+</div>
    
    
-   <div class="hr_25"></div>
 <div class="footer ">
 	<p><a href="#">慕课简介</a><i>|</i><a href="#">慕课公告</a><i>|</i> <a href="#">招纳贤士</a><i>|</i><a href="#">联系我们</a><i>|</i>客服热线：400-675-1234</p>
 	<p>Copyright &copy; 2006 - 2014 慕课版权所有&nbsp;&nbsp;&nbsp;京ICP备09037834号&nbsp;&nbsp;&nbsp;京ICP证B1034-8373号&nbsp;&nbsp;&nbsp;某市公安局XX分局备案编号：123456789123</p>
