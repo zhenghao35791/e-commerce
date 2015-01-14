@@ -1,0 +1,80 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>商品展示</title>
+<style type="text/css">
+div,ul,li,dl,dt,dd{
+	margin:0;
+	padding:0;
+}
+ul,li,dl,dt,dd{
+	list-style:none;
+}
+.demo{
+	margin:0 auto;
+	width:930px;
+}
+.demo ul li{
+	float:left;
+	width:300px;
+	margin-right:6px;
+	position:relative;
+}
+.demo ul li img{
+    border:none;
+	position:relative;
+	z-index:22;
+}
+.demo ul li a{
+	width:300px;
+    display:block;
+	border:2px solid #ccc;
+}
+.demo ul li a:hover{
+	border:2px solid #C03;
+}
+.demo ul li a span{
+    position:absolute;
+	z-index:33;
+	bottom:2px;
+	left:2px;
+	width:300px;
+	height:40px;
+	filter:alpha(Opacity=50);-moz-opacity:0.5;opacity: 0.5;
+	background:#000;
+	color:#fff;
+	line-height:40px;
+	text-align:left;
+	display:none;
+}
+.demo ul li a:hover span{
+	display:block;
+}
+</style>
+</head>
+<body>
+ <div class="demo">
+    <ul>
+       <li>
+         <a href="http://imooc.com">
+           <img src="1.jpg"  />
+           <span>学会html5 绝对的屌丝逆袭</span>
+         </a>
+       </li>
+       <li>
+         <a href="http://imooc.com">
+           <img src="2.jpg"  />
+           <span>圆角水晶按钮制作</span>
+         </a>
+       </li>
+       <li>
+         <a href="http://imooc.com">
+           <img src="3.jpg"  />
+           <span>8小时助你攻下html与css样式代码</span>
+         </a>
+       </li>
+    </ul>
+ </div>
+</body>
+</html>
