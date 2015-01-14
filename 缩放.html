@@ -1,0 +1,70 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+</head>
+<body>
+<div style="width:400px;margin:0 auto">
+    <img src="e-web/images/des_big.jpg" id="myImage"  /><br />
+    <input type="button" id="max" value="放大"  />
+    <input type="button" id="min" value="缩小"  />
+</div>
+<script>
+    window.onload = function(){
+		var maxBtn = document.getElementById("max");
+		maxBtn.onclick = function(){//添加放大点击事件
+			maxFun();//放大函数	
+		}
+		var img = document.getElementById("myImage");
+		var maxWidth = img.width*2;//放大宽度的极限值
+		var maxHeight = img.height*2;//放大的高度极限值
+		var minWidth = img.width*0.5;//缩小的宽度的极限值
+		var minHeight = img.height*0.5;//缩小的高度极限值
+		
+		//定义放大函数
+		function maxFun(){
+			var endWidth = img.width*1.30;//每次点击后的宽度
+			var endHeight = img.height*1.30;//每次点击后的高
+			var maxTimer = setInterval(function(){//判断图片宽度或者高度，数值不能超过1.5倍
+					if(img.width < endWidth){
+						if(img.width < maxWidth){
+							img.width = img.width*1.05;
+		   					img.height = img.height*1.05;
+					}else{
+						alert("已经放大到最大值了");//终止定时器
+				 		clearInterval(maxTimer);
+					}
+				}else{
+					clearInterval(maxTimer);	
+				}
+			},30);	
+		}
+	
+	
+		var minBtn = document.getElementById("min") ;
+		minBtn.onclick = function(){
+				minFun();
+			}
+			
+		function minFun(){//缩小方法
+			var endWidth = img.width*0.70;//每次点击后的宽度
+			var endHeight = img.height*0.70;//每次点击后的高
+			var maxTimer = setInterval(function(){//判断图片宽度或者高度，数值不能超过1.5倍
+					if(img.width > endWidth){
+						if(img.width > minWidth){
+							img.width = img.width*0.95;
+		   					img.height = img.height*0.95;
+					}else{
+						alert("已经缩小到最小值了");//终止定时器
+				 		clearInterval(maxTimer);
+					}
+				}else{
+					clearInterval(maxTimer);	
+				}
+			},30);	
+		}
+	}
+</script>
+</body>
+</html>
