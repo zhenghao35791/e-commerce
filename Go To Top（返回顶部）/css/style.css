@@ -1,0 +1,6 @@
+@charset "utf-8";
+/* CSS Document */
+
+#btn {display: block; width:40px; height:40px; position:fixed; left:50%; bottom:30px; margin-left:610px; background:url(../images/top_bg.png) left top;}
+#btn:hover {background:url(../images/top_bg.png) no-repeat 0 -39px;}
+.box {width:1190px; margin:0 auto;}
