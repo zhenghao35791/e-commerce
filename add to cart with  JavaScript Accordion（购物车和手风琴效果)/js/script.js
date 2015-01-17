@@ -25,6 +25,7 @@ window.onload = function () {//为了解决IE6没有getElementByClass的方法�
     var foot = document.getElementById('foot');
     var selectedViewList = document.getElementById('selectedViewList');
     var deleteAll = document.getElementById('deleteAll');
+	
 
     //计算
     function getTotal() {
@@ -170,3 +171,17 @@ window.onload = function () {//为了解决IE6没有getElementByClass的方法�
     checkAllInputs[0].checked = true;
     checkAllInputs[0].onclick();
 }
+function showDl(obj){
+	/*alert("s");
+	console.log(obj);
+	console.log(obj.getElementsByTagName('dl')[0]);*/
+	var aDl = obj.getElementsByTagName('dl')[0];
+	aDl.style.display = 'block';
+	}
+function hideDl(obj){
+	/*alert("s");
+	console.log(obj);
+	console.log(obj.getElementsByTagName('dl')[0]);*/
+	var aDl = obj.getElementsByTagName('dl')[0];
+	aDl.style.display = 'none';
+	}

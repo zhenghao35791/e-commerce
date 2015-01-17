@@ -231,4 +231,18 @@ img {
 #selectedViewList div:hover span {
     display: block;
 }
+/*手风琴*/
+.oDl{
+ 	display: none;	
+}
+.oDl dt{
+	color: #03F;
+	font-size:12px;
+	font-weigh:bold;	
+}
+.oDl dd{
+	color: #6CF;
+	font-size:14px;
+	font-weight:normal;	
+}
 
