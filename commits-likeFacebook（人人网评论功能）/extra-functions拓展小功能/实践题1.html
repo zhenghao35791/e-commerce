@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style type="text/css">
+        li{
+            width: 100px;
+            height: 20px;
+            line-height:  20px;
+            position: relative;
+            margin: 10px;
+        }
+        button {
+            position: absolute;
+            right: 3px;
+            top: 1px;
+            height: 20px;
+            /* 隐藏深处按钮 */
+            display: none;
+        }
+        li:hover button {
+            /* 显示删除按钮 */
+            display: inline-block;
+        }
+    </style>
+    <script type="text/javascript">
+
+        //定义按钮点击事件del，删除上级节点
+        function del(el) {
+            var p = el.parentNode;
+            p.parentNode.removeChild(p);
+        }
+    </script>
+</head>
+<body>
+<ul>
+    <li>内容1<button onclick="del(this)">删除</button></li>
+    <li>内容2<button onclick="del(this)">删除</button></li>
+    <li>内容3<button onclick="del(this)">删除</button></li>
+    <li>内容4<button onclick="del(this)">删除</button></li>
+    <li>内容5<button onclick="del(this)">删除</button></li>
+</ul>
+</body>
+</html>
