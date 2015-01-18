@@ -1,0 +1,33 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>右下角弹窗</title>
+<style>
+*{margin:0;padding:0;}
+.content{width:960px;height:1440px;background:#ccc;color:#000;font-size:36px;text-align:center;margin:0 auto;position:relative;}
+.rightfoottip{position:fixed;width:400px;height:300px;background:#efefef;color:#000;font-size:24px;text-align:center;line-height:300px;bottom:0;right:0;}
+.pic{position:relative;}
+.pic a{background:url(icon.jpg) no-repeat -399px -19px;width:16px;height:16px;display:inline-block;position:absolute; top:5px; right:5px;}
+.pic a:hover{background-position:-343px -19px;}
+</style>
+<script>
+window.onload = function(){
+	var TipBox = document.getElementById("tipCon");
+	var CloseBtn = document.getElementById("closeBtn");
+	CloseBtn.onclick = function(){
+		 TipBox.style.display = 'none';//改变显示属性
+		 TipBox.remove();//删除节点及内容
+		}
+}
+</script>
+</head>
+
+<body>
+<div class="content">网页内容</div>
+<div class="rightfoottip" id="tipCon">
+  <div class="pic"><img src="snow.gif" /><a href="javascript:void(0);" id="closeBtn"></a></div>
+</div>
+</body>
+</html>
+

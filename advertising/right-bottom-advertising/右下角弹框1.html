@@ -1,0 +1,42 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>右下角弹窗</title>
+<style>
+*{margin:0;padding:0;}
+.content{width:960px;height:1440px;background:#ccc;color:#000;font-size:36px;text-align:center;margin:0 auto;position:relative;}
+.tipCon{position:fixed;background:#efefef;color:#000;font-size:16px;text-align:center;bottom:0;right:0;}
+.clickMe{height:24px;background:#CCC;line-height:24px;}
+.showPic{display:none;}
+.clickMe{position:relative; }
+.clickMe a{background:url(icon.jpg) no-repeat -399px -19px;width:16px;height:16px;display:none;position:absolute; top:5px; right:5px;}
+.clickMe a:hover{background-position:-343px -19px;}
+</style>
+<script>
+window.onload = function(){
+	var TipBox = document.getElementById("tipCon");
+	var ClickMe = document.getElementById("clickMe");
+	var showPic = document.getElementById("showPic");
+	var closeBtn = document.getElementById("closeBtn");
+	ClickMe.onmouseover = function(){
+		  showPic.style.display = 'block';
+		  closeBtn.style.display = 'block';
+		}
+	closeBtn.onclick = function(){
+		showPic.style.display = 'none';
+		closeBtn.style.display = 'none';
+	}
+}
+</script>
+</head>
+
+<body>
+<div class="content">网页内容</div>
+<div class="tipCon" id="tipCon">
+  <div class="clickMe" id="clickMe">猜猜我有啥？<a href="javascrip:void(0);" id="closeBtn"></a></div>
+  <div class="showPic" id="showPic"><img src="snow.gif" /></div>
+</div>
+</body>
+</html>
+
