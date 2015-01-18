@@ -1,0 +1,83 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+    <title>变幻菜单</title>
+    <style type="text/css">
+        a
+        {
+            color: #FFFF99;
+            text-decoration: none;
+        }
+        a:hover
+        {
+            color: #FFFFFF;
+            text-decoration: underline;
+        }
+        .top-nav
+        {
+            padding: 10px 10px 0;
+            font-size: 12px;
+            font-weight: bold;
+            margin: 1em 0 0;
+            list-style: none;
+            border-bottom: 8px solid #DC4E1B;
+            overflow: hidden;
+        }
+        .top-nav li
+        {
+            float: left;
+            margin-right: 1px;
+        }
+        .top-nav li a
+        {
+            position: relative;
+            z-index: 0;
+        }
+        .top-nav li a span
+        {
+            position: absolute;
+            left: -999em;
+            visibility: hidden;
+        }
+
+        .top-nav li a, .top-nav li a:hover span
+        {
+            line-height: 20px;
+            text-decoration: none;
+            background: #DDDDDD;
+            color: #666666;
+            display: block;
+            width: 80px;
+            text-align: center;
+        }
+
+        .top-nav li a:hover span
+        {
+            padding-top: 2px;
+            visibility: visible;
+            top: 0;
+            left: 0;
+            cursor: pointer;
+        }
+
+        .top-nav li a:hover, .top-nav li a:hover span
+        {
+            color: #FFFFFF;
+            background: #DC4E1B;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div id="top">
+        <ul class="top-nav">
+            <li><a href="#">首页<span>Home</span></a></li>
+            <li><a href="#">课程大厅<span>Course</span></a></li>
+            <li><a href="#">学习中心<span>Learn</span></a></li>
+            <li><a href="#">关于我们<span>About</span></a></li>
+        </ul>
+
+</body>
+</html>

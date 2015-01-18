@@ -1,0 +1,118 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <title>响应式</title>
+    <style type="text/css">
+        body
+        {
+            margin: 0 auto;
+        }
+        ul
+        {
+            padding:0;
+            margin:0;
+            }
+        a
+        {
+            text-decoration: none;
+            color: white;
+            font-size: 14pt;
+            padding: 0px 3px;
+            display: block;
+        }
+        .menu
+        {
+            background: red;
+        }
+        
+        .menu li
+        {
+            display: block;
+            float: left;
+            margin: 3px;
+            background: grey;
+            width: 140px;
+            text-align: center;
+            color: white;
+            font-size: 9pt;
+        }
+        #logo
+        {
+            background: white;
+            width: 230px;
+        }
+        #logo a
+        {
+            color: Gray;
+            font-size: 35pt;
+            background: white;
+        }
+        #toplogo
+        {
+            display: none;
+            margin: 0 auto;
+            text-align: center;
+        }
+        #toplogo a
+        {
+            color: Black;
+            font-size: 35pt;
+        }
+        @media only screen and (min-width: 585px) and (max-width: 823px)
+        {
+            #logo
+            {
+                display: none;
+            }
+            #toplogo
+            {
+                display: block;
+                width: 100%;
+            }
+            .menu
+            {
+                width: 585px;
+                background: red;
+            }
+        }
+        @media only screen and (max-width: 585px)
+        {
+            #logo
+            {
+                display: none;
+            }
+            #toplogo
+            {
+                display: block;
+                width: 100%;
+            }
+            .menu
+            {
+                width: 100%;
+            }
+            .menu li
+            {
+                width: 100%;
+                float: left;
+            }
+        
+        }
+    </style>
+</head>
+<body>
+    <ul class="menu">
+        <div id="toplogo">
+            <a href="#">慕课网</a></div>
+        <li><a href="#">课程大厅</a><br />
+            IT课程都在这里啦</li>
+        <li><a href="#">学习中心</a><br />
+            好好学习，天天向上</li>
+        <li id="logo"><a href="#">慕课网</a></li>
+        <li><a href="#">个人中心</a><br />
+            个人信息 修改密码</li>
+        <li><a href="#">关于我们</a><br />
+            单位地址 应聘信息</li>
+    </ul>
+</body>
+</html>

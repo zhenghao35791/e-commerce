@@ -1,0 +1,173 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>多级下拉菜单</title>
+    <style type="text/css">
+        body
+        {
+            margin: 0;
+            padding: 30px;
+            background: #FFF;
+            color: #666;
+            behavior: url(../Scripts/csshover.htc);
+        }
+        
+        
+        h1
+        {
+            font: bold 16px;
+        }
+        p
+        {
+            font: 11px;
+        }
+        a
+        {
+            color: #900;
+            text-decoration: none;
+        }
+        a:hover
+        {
+            background: #900;
+            color: #FFF;
+        }
+        /*CSS Code for Menu Begin:*/
+        /* Root = Horizontal, Secondary = Vertical */
+        ul#navmenu
+        {
+            margin: 0;
+            border: 0 none;
+            padding: 0;
+            width: 500px; /*For KHTML*/
+            list-style: none;
+            height: 24px;
+        }
+        ul#navmenu li
+        {
+            margin: 0;
+            border: 0 none;
+            padding: 0;
+            float: left; /*For Gecko*/
+            display: inline;
+            list-style: none;
+            position: relative;
+            height: 24px;
+        }
+        ul#navmenu ul
+        {
+            margin: 0;
+            border: 0 none;
+            padding: 0;
+            width: 160px;
+            list-style: none;
+            display: none;
+            position: absolute;
+            top: 24px;
+            left: 0;
+        }
+        ul#navmenu ul li
+        {
+            float: none; /*For Gecko*/
+            display: block !important;
+            display: inline; /*For IE*/
+        }
+        /* Root Menu */
+        ul#navmenu a
+        {
+            border: 1px solid #FFF;
+            border-right-color: #CCC;
+            border-bottom-color: #CCC;
+            padding: 0 6px;
+            float: none !important; /*For Opera*/
+            float: left; /*For IE*/
+            display: block;
+            background: #EEE;
+            color: #666;
+            font: bold 10px/22px Verdana, Arial, Helvetica, sans-serif;
+            text-decoration: none;
+            height: auto !important;
+            height: 1%; /*For IE*/
+        }
+        /* Root Menu Hover Persistence */
+        ul#navmenu a:hover, ul#navmenu li:hover a, ul#navmenu li.iehover a
+        {
+            background: #CCC;
+            color: #FFF;
+        }
+        /* 2nd Menu */
+        ul#navmenu li:hover li a, ul#navmenu li.iehover li a
+        {
+            float: none;
+            background: #EEE;
+            color: #666;
+        }
+        /* 2nd Menu Hover Persistence */
+        ul#navmenu li:hover li a:hover, ul#navmenu li:hover li:hover a, ul#navmenu li.iehover li a:hover, ul#navmenu li.iehover li.iehover a
+        {
+            background: #CCC;
+            color: #FFF;
+        }
+        /* 3rd Menu */
+        ul#navmenu li:hover li:hover li a, ul#navmenu li.iehover li.iehover li a
+        {
+            background: #EEE;
+            color: #666;
+        }
+        /* 3rd Menu Hover Persistence */
+        ul#navmenu li:hover li:hover li a:hover, ul#navmenu li:hover li:hover li:hover a, ul#navmenu li.iehover li.iehover li a:hover, ul#navmenu li.iehover li.iehover li.iehover a
+        {
+            background: #CCC;
+            color: #FFF;
+        }
+        /* 4th Menu */
+        ul#navmenu li:hover li:hover li:hover li a, ul#navmenu li.iehover li.iehover li.iehover li a
+        {
+            background: #EEE;
+            color: #666;
+        }
+        /* 4th Menu Hover */
+        ul#navmenu li:hover li:hover li:hover li a:hover, ul#navmenu li.iehover li.iehover li.iehover li a:hover
+        {
+            background: #CCC;
+            color: #FFF;
+        }
+        ul#navmenu ul ul, ul#navmenu ul ul ul
+        {
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 160px;
+        }
+        /* Do Not Move - Must Come Before display:block for Gecko */
+        ul#navmenu li:hover ul ul, ul#navmenu li:hover ul ul ul, ul#navmenu li.iehover ul ul, ul#navmenu li.iehover ul ul ul
+        {
+            display: none;
+        }
+        ul#navmenu li:hover ul, ul#navmenu ul li:hover ul, ul#navmenu ul ul li:hover ul, ul#navmenu li.iehover ul, ul#navmenu ul li.iehover ul, ul#navmenu ul ul li.iehover ul
+        {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <ul id="navmenu">
+        <li><a href="#">慕课网首页</a></li>
+        <li><a href="#">课程大厅</a> </li>
+        <li><a href="#">学习中心 +</a>
+            <ul>
+                <li><a href="#">前端课程 +</a>
+                    <ul>
+                        <li><a href="#">javascript</a></li>
+                        <li><a href="#">css</a></li>
+                        <li><a href="#">jquery</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">手机开发</a></li>
+                <li><a href="#">后台编程</a></li>
+            </ul>
+        </li>
+        <li><a href="#">关于我们</a></li>
+    </ul>
+</body>
+</html>
