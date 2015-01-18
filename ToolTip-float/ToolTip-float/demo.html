@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>tooltip效果</title>
+    <style>
+        body {
+            font-size: 14px;
+            line-height: 1.8;
+            background: url(bg.jpg) no-repeat center top;
+            font-family: "Microsoft YaHei", "微软雅黑";
+        }
+
+        #demo {
+            width: 500px;
+            margin: 30px auto;
+            padding: 20px 30px;
+            position: relative;
+            background-color: #fff;
+            border-radius: 10px;
+            -moz-border-radius: 10px;
+            -webkit-border-radius: 10px;
+            box-shadow: 0px 0px 0px 10px rgba(0, 0, 0, 0.2);
+            -moz-box-shadow: 0px 0px 0px 10px rgba(0, 0, 0, 0.2);
+            -webkit-box-shadow: 0px 0px 0px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        #demo h2 {
+            color: #0099FF;
+        }
+
+        #demo .tooltip {
+            color: #0099FF;
+            cursor: help;
+        }
+
+        .tooltip-box {
+            display: block;
+            background: #fff;
+            line-height: 1.6;
+            border: 1px solid #66CCFF;
+            color: #333;
+            padding: 20px;
+            font-size: 12px;
+            border-radius: 5px;
+            overflow: auto;
+        }
+
+        #mycard img {
+            float: left;
+            width: 100px;
+            height: 100px;
+            padding: 10px;
+        }
+
+        #mycard p {
+            float: left;
+            width: 150px;
+            padding: 0 10px;
+        }
+    </style>
+</head>
+<body>
+<div id="demo">
+    <h2>原生JavaScript实现ToolTip效果</h2>
+
+    <p>ToolTip效果是非常常见的网页特效，它可以在用户将指针放置在控件上时为用户显示提示信息。
+        比如简称文字显示一行文字全称，例：<a class="tooltip" id="tooltip1">中国</a>， <a class="tooltip" id="tooltip2">NBA</a>。
+        又比如显示一段文字，例：唐诗三百首中的<a class="tooltip" id="tooltip3">春晓</a>你会么？如果不看tooltip提示你背不出来的话，那么你
+        可要加油了。
+    </p>
+
+    <p>
+        ToolTip效果还可以用来显示图片，例：<a class="tooltip" id="tooltip4">西湖美景</a>。当然显示一块儿带格式的内容也不在话下，例：
+        <a class="tooltip" id="tooltip5">我的资料</a>。
+    </p>
+
+    <p>
+        甚至你可以显示一整个网站：例：<a class="tooltip" id="tooltip6">慕课网</a>。
+    </p>
+
+    <p>
+        注意好的ToolTip需要考虑样式、效果、页面的边界等信息，希望你可以做出更漂亮的ToolTip效果。
+    </p>
+</div>
+<script>
+
+    var className = 'tooltip-box';
+
+    var isIE = navigator.userAgent.indexOf('MSIE') > -1;
+
+    function showTooltip(obj, id, html, width, height) {
+        if (document.getElementById(id) == null) {
+
+            var tooltipBox;
+            tooltipBox = document.createElement('div');
+            tooltipBox.className = className;
+            tooltipBox.id = id;
+            tooltipBox.innerHTML = html;
+
+            obj.appendChild(tooltipBox);
+
+            tooltipBox.style.width = width ? width + 'px' : 'auto';
+            tooltipBox.style.height = height ? height + 'px' : 'auto';
+
+            if (!width && isIE) {
+                tooltipBox.style.width = tooltipBox.offsetWidth;
+            }
+
+            tooltipBox.style.position = "absolute";
+            tooltipBox.style.display = "block";
+
+            var left = obj.offsetLeft;
+            var top = obj.offsetTop + 20;
+
+            if (left + tooltipBox.offsetWidth > document.body.clientWidth) {
+                var demoLeft = document.getElementById("demo").offsetLeft;
+                left = document.body.clientWidth - tooltipBox.offsetWidth - demoLeft;
+                if (left < 0) left = 0;
+            }
+
+            tooltipBox.style.left = left + 'px';
+            tooltipBox.style.top = top + 'px';
+
+            obj.onmouseleave = function () {
+                setTimeout(function () {
+                    document.getElementById(id).style.display = "none";
+                }, 100);
+            };
+
+        } else {
+            document.getElementById(id).style.display = "block";
+        }
+    }
+
+    var t1 = document.getElementById("tooltip1");
+    var t2 = document.getElementById("tooltip2");
+    var t3 = document.getElementById("tooltip3");
+    var t4 = document.getElementById("tooltip4");
+    var t5 = document.getElementById("tooltip5");
+    var t6 = document.getElementById("tooltip6");
+
+    t1.onmouseenter = function () {
+        showTooltip(this, "t1", '中华人民共和国', 200);
+    };
+
+    t2.onmouseenter = function () {
+        showTooltip(this, "t2", '美国篮球职业联赛', 200);
+    };
+
+    t3.onmouseenter = function () {
+        showTooltip(this, "t3", '<h2>春晓</h2><p>春眠不觉晓，</p><p>处处闻啼鸟。</p><p>夜来风雨声，</p><p>花落知多少。</p>', 100);
+    };
+
+    t4.onmouseenter = function () {
+        showTooltip(this, "t4", '<img src="1.jpg" width="500" /> ', 520);
+    };
+
+    t5.onmouseenter = function () {
+        var _html = '<div id="mycard"><img src="2.jpg" alt=""/><p><strong>昵称一定要长</strong></p><p>我的简介我的简介</p></div>';
+        showTooltip(this, "t5", _html, 300);
+    };
+
+    t6.onmouseenter = function () {
+        var _html = '<iframe src="http://www.imooc.com/" width="480" height="300"></iframe>'
+        showTooltip(this, "t6", _html, 500);
+    };
+
+</script>
+</body>
+</html>
